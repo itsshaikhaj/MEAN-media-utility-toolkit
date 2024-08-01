@@ -1,0 +1,30 @@
+/* Content Container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem); /* Adjust based on your layout */
+  text-align: center;
+  background: linear-gradient(135deg, #23272F 0%, #14161a 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(255, 212, 59, 0.5), 0px 0px 20px rgba(255, 102, 0, 0.5);
+}
+
+/* Coming Soon Title */
+.coming-soon-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFD43B; /* Bright color for visibility */
+  text-shadow: 2px 2px 4px rgba(255, 102, 0, 0.7);
+}
+
+/* Coming Soon Message */
+.coming-soon-message {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,48 @@
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack spinner and text vertically */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Ensure the loader is on top of other elements */
+}
+
+.spinner {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 2px solid #444;
+  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px #ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+  animation: rot55 0.7s linear infinite;
+}
+
+.spinnerin {
+  border: 2px solid #444;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rot55 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  margin-top: 1rem; /* Space between spinner and text */
+  color: #fff; /* Text color */
+  font-size: 1.2rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Optional: subtle glow effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
